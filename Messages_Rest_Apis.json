@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "de41820e-ff18-439a-be0a-6d82bbd22883",
+		"name": "Messages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"subject\": \"Message Subject 2\",\n\t\"sender\": \"Sender 2\",\n\t\"to\": \"Client 2\",\n\t\"content\": \"Message Body 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/messages/a221ee28-9c25-42db-9c28-3c09f408f9f2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"messages",
+						"a221ee28-9c25-42db-9c28-3c09f408f9f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Message Details by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/messages/a221ee28-9c25-42db-9c28-3c09f408f9f2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"messages",
+						"a221ee28-9c25-42db-9c28-3c09f408f9f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Message by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/messages/a221ee28-9c25-42db-9c28-3c09f408f9f2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"messages",
+						"a221ee28-9c25-42db-9c28-3c09f408f9f2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
