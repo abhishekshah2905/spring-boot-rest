@@ -41,4 +41,4 @@ Please refer attached Postman collection in the project root directory to review
 
 ```File Name: Messages_Rest_Apis.json```
 
-Note: Followed Rest API standards to return valid JSON for Success/Error cases. Global rest exception handler also configured to manage known/unknow errors.
+Note: Followed Rest API standards to return valid JSON for Success/Error cases. Global rest exception handler also configured to manage known/unknown errors.
